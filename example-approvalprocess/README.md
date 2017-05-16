@@ -34,9 +34,11 @@ and start the `Vacation Request` process
 and enter the needed input variables 
 ![Start-Process-Vacation-Request-Input](./img/StartProcess-Vacation-Request_Input.png)
 
+
 ## Tasklist-Filter
-Create a Tasklist-Filter for all active tasks 
+Create Tasklist-Filter for all tasks of the according user (e.g. frank, rene, ...)  
 ![Tasklist-Filter](./img/Tasklist-Filter.png)
+
 
 ## Work on user tasks 
 Approve vacation request via 
@@ -45,6 +47,7 @@ Approve vacation request via
 * save
 * complete
 ![Task-Approve](./img/Task-Approve.png)
+
 Book vacation via 
 * claim
 * vacation booked
