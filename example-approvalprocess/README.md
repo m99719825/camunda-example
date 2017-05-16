@@ -1,4 +1,4 @@
-# K+N Vacation-Request via Camunda Process Engine and Spring Boot
+# Vacation-Approval-Request process via Camunda Process Engine and Spring Boot
 
 This example demonstrates how to bootstrap the Camunda process engine with 
 [Camunda Spring Boot](https://github.com/camunda/camunda-bpm-spring-boot-starter). 

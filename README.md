@@ -1,7 +1,7 @@
 # Camunda BPM example projects
 
 ## Overview
-* [Spring-Boot approval process](#example-approvalprocess)
+* [Spring-Boot approval process](./example-approvalprocess)
 
 ## Links
 * [camunda](https://camunda.com/)

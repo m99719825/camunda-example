@@ -33,14 +33,14 @@ public class TaskAssignmentService {
      */
     @Nonnull
     public ImmutableTaskAssignmentResult evaluate(@Nonnull ImmutableTaskAssignmentRequest taskAssignmentRequest) {
-        logger.debug("Evaluate task assignment for {}", taskAssignmentRequest.stepId());
+        logger.debug("Evaluate task assignment for {}", taskAssignmentRequest.toString());
         return evaluateAssignmentDecisionTableWithContext(evaluateDecisionTableInput(taskAssignmentRequest), ProcessConstant.DMN_TASK_ASSIGNMENT_KEY, ProcessConstant.VAR_ASSIGNEE);
     }
 
     Map<String, Object> evaluateDecisionTableInput(@Nonnull ImmutableTaskAssignmentRequest taskAssignmentRequest) {
         Map<String, Object> vars = new HashMap<String, Object>();
-        vars.put(ProcessConstant.VAR_STEP_ID, taskAssignmentRequest.stepId());
         vars.putAll(taskAssignmentRequest.variables());
+        vars.put(ProcessConstant.VAR_STEP_ID, taskAssignmentRequest.stepId());
         return vars;
     }
 

@@ -12,7 +12,7 @@ import org.immutables.value.Value;
 public abstract class TaskAssignmentRequest {
 
     public static ImmutableTaskAssignmentRequest of(@Nonnull final DelegateTask delegateTask) {
-        return ImmutableTaskAssignmentRequest.builder().stepId(delegateTask.getProcessDefinitionId()).variables(delegateTask.getVariables()).build();
+        return ImmutableTaskAssignmentRequest.builder().stepId(delegateTask.getTaskDefinitionKey()).variables(delegateTask.getVariables()).build();
     }
 
     @NotNull
