@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions_0ykaw8o" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="TASK_ASSIGNMENT" name="TASK-ASSIGNMENT">
+    <decisionTable id="decisionTable" hitPolicy="FIRST">
+      <input id="InputClause_1ewkjvh" label="Requester name" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_1anm0ul" typeRef="string">        <text>userName</text>
+</inputExpression>
+      </input>
+      <input id="InputClause_1t5oc3a" label="Task Type Id" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_1gnx5io" typeRef="string">        <text>stepId</text>
+</inputExpression>
+      </input>
+      <output id="output1" label="Assignee" name="assignee" typeRef="string" />
+      <rule id="row-366595130-1">
+        <inputEntry id="UnaryTests_07k4alm">        <text><![CDATA["zoltan"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_19fj82y">        <text><![CDATA["boss_step_1"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0gyt60l">        <text><![CDATA["stefan"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-366595130-2">
+        <inputEntry id="UnaryTests_0m7ploq">        <text><![CDATA["uli"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_00uygm5">        <text><![CDATA["boss_step_1"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0c5d24z">        <text><![CDATA["torben"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-366595130-3">
+        <inputEntry id="UnaryTests_1ajzh8l">        <text></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0dmtj24">        <text><![CDATA["boss_step_1"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0uixdlx">        <text><![CDATA["frank"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-366595130-4">
+        <inputEntry id="UnaryTests_1lbfh8j">        <text></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_19tfxlh">        <text><![CDATA["hr_step_1"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_02w2e4j">        <text><![CDATA["rene"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-366595130-5">
+        <inputEntry id="UnaryTests_18x6azm">        <text></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0n2k5rm">        <text></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0i6my65">        <text><![CDATA["admin"]]></text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

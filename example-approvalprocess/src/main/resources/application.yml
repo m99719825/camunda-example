@@ -1,0 +1,5 @@
+spring:
+    application:
+        name: bpa-vacation-request
+server:
+    port: 9090
