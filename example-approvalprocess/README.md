@@ -11,8 +11,8 @@ DMN table for the task assignment.
 ![DMN-table](./img/DMN-table.png)
 
 ## Get started
-To startup the vacation-request example.approval type `mvn spring-boot:run` on the console or 
-execute the Java class `VacationRequestApplication` from within your IDE. 
+To startup the example approval-process type `mvn spring-boot:run` on the console or 
+execute the Java class `VacationRequestApplication` within your IDE. 
 Please consider, that this project requires to run the Immutables annotation processor, which can 
 be activated in your IDE via [Using annotation processor in IDE](https://immutables.github.io/apt.html).
 
